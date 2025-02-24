@@ -7,29 +7,37 @@ app.config['SQLALCHEMY_DATABASE_URI'] = environ.get('DB_URL')
 db = SQLAlchemy(app)
 
 class Message(db.Model):
-    __tablename__ = 'messages'
+  __tablename__ = 'messages'
 
-    id = db.Column(db.Integer, primary_key=True)
-    text = db.Column(db.String(80), unique=True, nullable=False)
+  id = db.Column(db.Integer, primary_key=True)
+  text = db.Column(db.String(80), unique=True, nullable=False)
 
-    def json(self):
-        return {'id': self.id,'text': self.text}
+  def json(self):
+    return {'id': self.id, 'text': self.text}
 
-# TODO fix db setup:
-# db.create_all()
+with app.app_context():
+  db.create_all()
 
 @app.route('/latest-message', methods=['GET'])
 def test():
-    # TODO get from db
-  return make_response(jsonify({'message': 'test route'}), 200)
+  try:
+    msg = Message.query.order_by(Message.id.desc()).first()
+    if msg:
+      return make_response(msg.text, 200)
+    return make_response('hello distr!', 200)
+  except Exception as e:
+    print(e)
+    return make_response(jsonify({'message': 'error getting message'}), 500)
 
-@app.route('/message', methods=['POST'])
-def create_user():
+
+@app.route('/messages', methods=['POST'])
+def create_message():
   try:
     data = request.get_json()
     new_user = Message(text=data['text'])
     db.session.add(new_user)
     db.session.commit()
     return make_response(jsonify({}), 201)
-  except e:
-    return make_response(jsonify({'message': 'error creating user'}), 500)
+  except Exception as e:
+    print(e)
+    return make_response(jsonify({'message': 'error creating message'}), 500)
