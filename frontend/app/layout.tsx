@@ -1,12 +1,12 @@
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
-import { Link } from "@heroui/link";
 import clsx from "clsx";
 
 import { Providers } from "./providers";
 
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
+import { buildConfig } from "@/buildconfig";
 
 export const metadata: Metadata = {
   title: {
@@ -46,15 +46,10 @@ export default function RootLayout({
               {children}
             </main>
             <footer className="w-full flex items-center justify-center py-3">
-              <Link
-                isExternal
-                className="flex items-center gap-1 text-current"
-                href="https://distr.sh?utm_source=hello-distr"
-                title="Distr homepage"
-              >
-                <span className="text-default-600">Powered by</span>
-                <p className="text-primary">Distr</p>
-              </Link>
+              <span className="flex items-center gap-1 text-current text-default-600">
+                hello-distr version:&nbsp;
+              </span>
+              <p className="text-primary">{buildConfig.version}</p>
             </footer>
           </div>
         </Providers>
