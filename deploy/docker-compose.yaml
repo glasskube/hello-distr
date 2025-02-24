@@ -13,6 +13,12 @@ services:
       POSTGRES_USER: ${HELLO_DISTR_DB_USER:?error}
       POSTGRES_PASSWORD: ${HELLO_DISTR_DB_PASSWORD:?error}
       POSTGRES_DB: ${HELLO_DISTR_DB_NAME:?error}
+    restart: unless-stopped
+    healthcheck:
+      test: pg_isready -h localhost -U ${POSTGRES_USER} -d ${POSTGRES_DB}
+      start_interval: 1s
+      interval: 5s
+      retries: 6
     volumes:
       - 'postgres:/var/lib/postgresql/data/'
     networks:
@@ -24,7 +30,9 @@ services:
       <<: *shared-env
       DB_URL: postgresql://${HELLO_DISTR_DB_USER:?error}:${HELLO_DISTR_DB_PASSWORD:?error}@postgres/${HELLO_DISTR_DB_NAME:?error}?sslmode=disable
     depends_on:
-      - postgres
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
     networks:
       - app_network
 
@@ -35,6 +43,7 @@ services:
       NEXT_PUBLIC_API_URL: 'http://${HELLO_DISTR_HOST:?error}/api' # TODO https
     depends_on:
       - backend
+    restart: unless-stopped
     networks:
       - app_network
 
@@ -48,6 +57,7 @@ services:
     depends_on:
       - backend
       - frontend
+    restart: unless-stopped
     networks:
       - app_network
 
