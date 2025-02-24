@@ -6,6 +6,6 @@ export const siteConfig = {
   links: {
     github: "https://github.com/glasskube/distr",
     docs: "https://distr.sh/docs",
-    discord: "https://discord.gg/9b6yyZKmH4",
+    discord: "https://discord.gg/SxH6KUCGH7",
   },
 };
