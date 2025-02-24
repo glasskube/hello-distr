@@ -6,10 +6,10 @@ import { button as buttonStyles } from "@heroui/theme";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
-import { getApiHost } from "@/config/api";
+import { getApiUrl } from "@/config/api";
 
 export default async function Home() {
-  const response = await fetch(`${getApiHost()}/latest-message`, {
+  const response = await fetch(`${getApiUrl()}/latest-message`, {
     cache: "no-store",
   });
   const output = await response.text();

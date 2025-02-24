@@ -25,8 +25,9 @@ FROM base AS builder
 # update-frontend-version.js will write the version into the json, from where it will be read to show it on the frontend
 ARG VERSION
 ENV VERSION=${VERSION}
-# API will be available under /api of the same host as the frontend
-ENV NEXT_PUBLIC_API_URL="/api"
+# public API will be available under /api of the same host as the frontend (we don't use it in this example though)
+# ENV NEXT_PUBLIC_API_URL="/api"
+# ENV INTERNAL_API_URL="http://backend:5000"
 
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules

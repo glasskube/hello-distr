@@ -1,0 +1,55 @@
+name: hello-distr-prod
+
+x-shared-env: &shared-env
+  HELLO_DISTR_HOST: ${HELLO_DISTR_HOST:?error}
+
+services:
+  postgres:
+    image: 'postgres:17.3-alpine3.20'
+    environment:
+      POSTGRES_USER: local
+      POSTGRES_PASSWORD: local
+      POSTGRES_DB: hello-distr
+    volumes:
+      - 'postgres:/var/lib/postgresql/data/'
+    networks:
+      - app_network
+
+  backend:
+    image: hello-distr-backend
+    environment:
+      DB_URL: postgresql://local:local@postgres/hello-distr?sslmode=disable
+    depends_on:
+      - postgres
+    networks:
+      - app_network
+
+  frontend:
+    image: hello-distr-frontend
+    environment:
+      <<: *shared-env
+      NEXT_PUBLIC_API_URL: 'http://${HELLO_DISTR_HOST:?error}/api' # TODO https
+    depends_on:
+      - backend
+    networks:
+      - app_network
+
+  proxy:
+    image: hello-distr-proxy
+    environment:
+      <<: *shared-env
+      HOST: ${HELLO_DISTR_HOST:?error}
+    ports:
+      - '80:80' # TODO https
+    depends_on:
+      - backend
+      - frontend
+    networks:
+      - app_network
+
+volumes:
+  postgres:
+
+networks:
+  app_network:
+    driver: bridge

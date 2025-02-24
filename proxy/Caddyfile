@@ -1,0 +1,7 @@
+{$HOST}:80 {
+	log stderr
+	handle_path /api/* {
+	    reverse_proxy backend:5000
+	}
+	reverse_proxy frontend:3000
+}

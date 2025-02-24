@@ -1,4 +1,4 @@
-export function getApiHost() {
+export function getApiUrl() {
   if (typeof process.env.NEXT_PUBLIC_API_URL === "string") {
     return process.env.NEXT_PUBLIC_API_URL;
   }
