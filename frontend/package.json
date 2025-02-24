@@ -6,7 +6,9 @@
   "dev": "next dev --turbopack",
   "build": "next build",
   "start": "next start",
-  "lint": "eslint . --ext .ts,.tsx -c .eslintrc.json --fix"
+  "lint": "eslint . --ext .ts,.tsx -c .eslintrc.json --fix",
+  "prebuild": "npm run buildconfig",
+  "buildconfig": "node hack/update-frontend-version.js"
  },
  "dependencies": {
   "@heroui/button": "2.2.13",
