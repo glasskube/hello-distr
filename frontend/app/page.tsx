@@ -6,10 +6,13 @@ import { button as buttonStyles } from "@heroui/theme";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
-import { getLatestMessage } from "@/api/latest-message";
+import { getApiHost } from "@/config/api";
 
 export default async function Home() {
-  const latestMessage = await getLatestMessage();
+  const response = await fetch(`${getApiHost()}/latest-message`, {
+    cache: "no-store",
+  });
+  const output = await response.text();
 
   return (
     <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
@@ -46,8 +49,7 @@ export default async function Home() {
       <div className="mt-8">
         <Snippet hideCopyButton hideSymbol variant="bordered">
           <span>
-            Latest Message from API:{" "}
-            <Code color="primary">{latestMessage}</Code>
+            Latest Message from API: <Code color="primary">{output}</Code>
           </span>
         </Snippet>
       </div>
