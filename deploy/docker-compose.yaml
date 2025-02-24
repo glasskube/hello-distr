@@ -1,15 +1,18 @@
-name: hello-distr-prod
+name: hello-distr
 
+# tip: only share non-sensitive data to avoid accidental exposure of sensitive values (like passwords) to other containers
 x-shared-env: &shared-env
-  HELLO_DISTR_HOST: ${HELLO_DISTR_HOST:?error}
+  HELLO_DISTR_HOST: ${HELLO_DISTR_HOST}
+  HELLO_DISTR_DB_NAME: ${HELLO_DISTR_DB_NAME}
 
 services:
   postgres:
     image: 'postgres:17.3-alpine3.20'
     environment:
-      POSTGRES_USER: local
-      POSTGRES_PASSWORD: local
-      POSTGRES_DB: hello-distr
+      <<: *shared-env
+      POSTGRES_USER: ${HELLO_DISTR_DB_USER:?error}
+      POSTGRES_PASSWORD: ${HELLO_DISTR_DB_PASSWORD:?error}
+      POSTGRES_DB: ${HELLO_DISTR_DB_NAME:?error}
     volumes:
       - 'postgres:/var/lib/postgresql/data/'
     networks:
@@ -18,7 +21,8 @@ services:
   backend:
     image: hello-distr-backend
     environment:
-      DB_URL: postgresql://local:local@postgres/hello-distr?sslmode=disable
+      <<: *shared-env
+      DB_URL: postgresql://${HELLO_DISTR_DB_USER:?error}:${HELLO_DISTR_DB_PASSWORD:?error}@postgres/${HELLO_DISTR_DB_NAME:?error}?sslmode=disable
     depends_on:
       - postgres
     networks:
