@@ -130,6 +130,19 @@ to a newer version, the deploy modal in the Distr web interface will show the pr
 
 You can use this template to set recommended values and to leave additional comments. 
 
+## `hello-distr` in action
+
+Once deployed, the `hello-distr` app will be available at port 80 of the given hostname (env variable `HELLO_DISTR_HOST`).
+The user interface will be available at `http://<hostname>`, and the python API will be available at `http://<hostname>/api`. 
+The UI consists of only one page showing the deployed version and the latest entry in the `messages` table of the postgres DB. 
+To demonstrate that the API is also publicly available, you can `POST` a newer message to it:
+
+```shell
+curl -X POST http://<your-hostname>/api/messages -d '{"text": "hello distr lol"}'  -H 'Content-Type: application/json'
+```
+
+After refreshing the UI, it should display the newly added message. 
+
 ## Local Development
 
 **Postgres**
