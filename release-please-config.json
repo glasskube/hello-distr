@@ -3,7 +3,6 @@
     ".": {
       "release-type": "go",
       "extra-files": [
-        "README.md",
         "deploy/docker-compose.yml",
         {
           "type": "json",
