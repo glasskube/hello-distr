@@ -26,6 +26,7 @@ jobs:
           application-id: ${{ vars.DISTR_APPLICATION_ID }}
           version-name: ${{ github.ref_name }}
           compose-file: ${{ github.workspace }}/deploy/docker-compose.yaml
+          template-file: ${{ github.workspace }}/deploy/env.template
 
       - name: Print Application Version ID
         id: output
