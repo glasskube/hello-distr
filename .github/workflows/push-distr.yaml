@@ -22,6 +22,7 @@ jobs:
         uses: glasskube/distr-create-version-action@v1.2.1
         with:
           api-token: ${{ secrets.DISTR_TOKEN }}
+          api-base: 'https://demo.distr.sh/api/v1'
           application-id: ${{ vars.DISTR_APPLICATION_ID }}
           version-name: ${{ github.ref_name }}
           compose-file: ${{ github.workspace }}/deploy/docker-compose.yml
