@@ -3,8 +3,8 @@ name: hello-distr
 
 # note: only share non-sensitive data to avoid accidental exposure of sensitive values (like passwords) to other containers
 x-shared-env: &shared-env
-  HELLO_DISTR_HOST: ${HELLO_DISTR_HOST}
-  HELLO_DISTR_DB_NAME: ${HELLO_DISTR_DB_NAME}
+  HELLO_DISTR_HOST: ${HELLO_DISTR_HOST:?error}
+  HELLO_DISTR_DB_NAME: ${HELLO_DISTR_DB_NAME:?error}
 
 services:
   postgres:
@@ -16,7 +16,7 @@ services:
       POSTGRES_DB: ${HELLO_DISTR_DB_NAME:?error}
     restart: unless-stopped
     healthcheck:
-      test: pg_isready -h localhost -U ${POSTGRES_USER} -d ${POSTGRES_DB}
+      test: pg_isready -h localhost -U ${HELLO_DISTR_DB_USER:?error} -d ${HELLO_DISTR_DB_NAME:?error}
       start_interval: 1s
       interval: 5s
       retries: 6
