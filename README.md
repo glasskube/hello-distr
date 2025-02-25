@@ -61,7 +61,7 @@ the GitHub registry before the build, and afterwards push the resulting images t
 
 On release, additionally, the [`push-distr`](.github/workflows/push-distr.yaml) workflow is started, 
 which uploads the artifacts in `deploy/` (`docker-compose.yaml` and `env.template`)to the Distr Hub, 
-and makes the new version available to you and your customers.
+and makes the new version available to you and your customers. The used version name is the pushed git Tag. 
 
 This GitHub action needs to authenticate itself against the Distr Hub, and it needs additional information as to which application the new
 version should be added to. Therefore follow these one-time setup steps: 
@@ -79,16 +79,13 @@ this GitHub action.
 Note that in this example repo, we set the `api-base` to `https://demo.distr.sh/api/v1`. In order to make use of this in production, 
 you should remove this line to use the default Distr Hub (`app.distr.sh`) instead. 
 
-### Frontend
+## Common Scenarios
 
-**Next.js Build**
+### Showing the build version in the frontend
 
-**Environment Variables**
+We often want to display the software's own version in the user interface. 
 
-Dynamic content of the web application, like the version of the frontend itself, can be passed to the build process
-with env variables.
-
-For example, we make the `VERSION` variable available in the `Dockerfile`.
+TODO
 
 ## Where to go from here
 
@@ -105,13 +102,4 @@ You can install Postgres locally or use Docker to run it in a container.
 docker compose up
 ```
 
-**Frontend**
-
-```shell
-cd new_frontend
-npm install
-npm run dev
-```
-
-Navigate in your browser to `http://localhost:3000`.
-
+To run start the backend or frontend, please consult the respective `README`s in the subdirectories. 
