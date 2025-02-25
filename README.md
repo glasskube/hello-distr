@@ -88,7 +88,7 @@ To that end we can pass the version name (i.e. the git tag) to the environment o
 writes this version into a `version.json` file inside the app. The version defined in this file will then be displayed in a 
 frontend component. 
 
-To add the argument to the docker build (see `build-frontend.yaml`):
+To add the argument to the docker build (see `.github/workflows/build-frontend.yaml`):
 ```yaml
 build-args: |
   VERSION=${{ github.ref_name }}
