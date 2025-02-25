@@ -59,8 +59,9 @@ the GitHub registry before the build, and afterwards push the resulting images t
 
 #### Releasing a new Distr application version 
 
-On release, additionally, the `push-distr` workflow is started, which uploads the artifacts in `deploy/` (`docker-compose.yaml` and `env.template`) 
-to the Distr Hub, and makes the new version available to you and your customers.
+On release, additionally, the [`push-distr`](.github/workflows/push-distr.yaml) workflow is started, 
+which uploads the artifacts in `deploy/` (`docker-compose.yaml` and `env.template`)to the Distr Hub, 
+and makes the new version available to you and your customers.
 
 This GitHub action needs to authenticate itself against the Distr Hub, and it needs additional information as to which application the new
 version should be added to. Therefore follow these one-time setup steps: 
@@ -74,6 +75,9 @@ directly paste it into the `push-distr.yaml` workflow file (but please never dir
 
 See [distr-create-version-action docs](https://github.com/glasskube/distr-create-version-action/blob/main/README.md#usage) for further information regarding
 this GitHub action. 
+
+Note that in this example repo, we set the `api-base` to `https://demo.distr.sh/api/v1`. In order to make use of this in production, 
+you should remove this line to use the default Distr Hub (`app.distr.sh`) instead. 
 
 ### Frontend
 
