@@ -40,7 +40,7 @@ services:
     image: hello-distr-frontend
     environment:
       <<: *shared-env
-      NEXT_PUBLIC_API_URL: 'http://${HELLO_DISTR_HOST:?error}/api' # TODO https
+      NEXT_PUBLIC_API_URL: 'http://${HELLO_DISTR_HOST:?error}/api'
     depends_on:
       - backend
     restart: unless-stopped
@@ -53,7 +53,7 @@ services:
       <<: *shared-env
       HOST: ${HELLO_DISTR_HOST:?error}
     ports:
-      - '80:80' # TODO https
+      - '80:80'
     depends_on:
       - backend
       - frontend
