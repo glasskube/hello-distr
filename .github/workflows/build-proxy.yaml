@@ -3,6 +3,7 @@
 name: Build Proxy
 
 on:
+  pull_request:
   push:
     branches:
       - "*"
