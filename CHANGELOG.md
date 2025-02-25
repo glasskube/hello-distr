@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.3](https://github.com/glasskube/hello-distr/compare/0.1.2...0.1.3) (2025-02-25)
+
+
+### Other
+
+* **deps:** update docker/build-push-action action to v6.14.0 ([#24](https://github.com/glasskube/hello-distr/issues/24)) ([90f1921](https://github.com/glasskube/hello-distr/commit/90f192165556657c6ad6a779e75cdf904ce5ea72))
+* **deps:** update postgres docker tag to v17.4 ([#18](https://github.com/glasskube/hello-distr/issues/18)) ([855e3b0](https://github.com/glasskube/hello-distr/commit/855e3b00fa83ae6ae97f80b09a2db15b240b1505))
+
 ## [0.1.2](https://github.com/glasskube/hello-distr/compare/0.1.1...0.1.2) (2025-02-25)
 
 
