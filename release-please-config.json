@@ -3,7 +3,7 @@
     ".": {
       "release-type": "go",
       "extra-files": [
-        "deploy/docker-compose.yml",
+        "deploy/docker-compose.yaml",
         {
           "type": "json",
           "path": "frontend/package.json",
