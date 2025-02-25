@@ -84,8 +84,33 @@ you should remove this line to use the default Distr Hub (`app.distr.sh`) instea
 ### Showing the build version in the frontend
 
 We often want to display the software's own version in the user interface. 
+To that end we can pass the version name (i.e. the git tag) to the environment of the frontend docker build, which itself
+writes this version into a `version.json` file inside the app. The version defined in this file will then be displayed in a 
+frontend component. 
 
-TODO
+To add the argument to the docker build (see `build-frontend.yaml`):
+```yaml
+build-args: |
+  VERSION=${{ github.ref_name }}
+```
+
+To accept this `VERSION` environment variable (see `frontend/Dockerfile`):
+```
+ARG VERSION
+ENV VERSION=${VERSION}
+```
+
+To write the version file inside the frontend repo, there is the `frontend/hack/update-frontend-version.js` script:
+```javascript
+const out = JSON.stringify({version: env['VERSION'] || 'snapshot'}, null, 2)
+await writeFile('buildconfig/version.json', out);
+```
+
+This script is hooked into the next.js build process as `prebuild`, see `frontend/package.json`:
+```json
+"prebuild": "npm run buildconfig",
+"buildconfig": "node hack/update-frontend-version.js"
+```
 
 ## Where to go from here
 
@@ -102,4 +127,4 @@ You can install Postgres locally or use Docker to run it in a container.
 docker compose up
 ```
 
-To run start the backend or frontend, please consult the respective `README`s in the subdirectories. 
+To start the backend or frontend, please consult the respective `README`s in the subdirectories. 
