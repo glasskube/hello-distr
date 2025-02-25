@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/glasskube/hello-distr/compare/0.1.0...0.1.1) (2025-02-25)
+
+
+### Bug Fixes
+
+* **ci:** deploy compose file name ([#26](https://github.com/glasskube/hello-distr/issues/26)) ([70544ac](https://github.com/glasskube/hello-distr/commit/70544ac499394831fa269893c018442879e67667))
+
 ## [0.1.0](https://github.com/glasskube/hello-distr/compare/v0.0.1...0.1.0) (2025-02-25)
 
 
