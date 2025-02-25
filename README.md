@@ -79,9 +79,9 @@ this GitHub action.
 Note that in this example repo, we set the `api-base` to `https://demo.distr.sh/api/v1`. In order to make use of this in production, 
 you should remove this line to use the default Distr Hub (`app.distr.sh`) instead. 
 
-## Common Scenarios
+### Common Requirements
 
-### Showing the build version in the frontend
+#### Showing the build version in the frontend
 
 We often want to display the software's own version in the user interface. 
 To that end we can pass the version name (i.e. the git tag) to the environment of the frontend docker build, which itself
@@ -112,10 +112,21 @@ This script is hooked into the next.js build process as `prebuild`, see `fronten
 "buildconfig": "node hack/update-frontend-version.js"
 ```
 
-## Where to go from here
+### Production docker compose file and environment variables
 
+So far we have managed to build and release a new version of `hello-distr` and to publish the deploy artifacts to Distr Hub.
+Let's now take a look at these artifacts.
 
+You can find the production compose file at `deploy/docker-compose.yaml`. For all the services to start up and run correctly,
+some environment variables need to be passed from the outside. You or your customer (depending on the deployment environment)
+will have to set these variables, when deploying the `hello-distr` application via the Distr web interface. 
 
+In order to make this process easier for you and your customers, you can define an optional environment template (see `deploy/env.template`)
+and upload it to Distr with the `template-file` parameter of the GitHub action. 
+
+This template is a simple text file with KEY=VALUE lines. Note: This template is only for the user to set the possible environment
+values when deploying the app via Distr – and it will only be shown at the **first** deployment of this app. When later updating
+to a newer version, the deploy modal in the Distr web interface will show the previously set variables, not the template!
 
 ## Local Development
 
