@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.4](https://github.com/glasskube/hello-distr/compare/0.1.3...0.1.4) (2025-02-25)
+
+
+### Bug Fixes
+
+* postgres healthcheck parameters ([#34](https://github.com/glasskube/hello-distr/issues/34)) ([683f9e4](https://github.com/glasskube/hello-distr/commit/683f9e4cf478d93e999358def8db237d467d0ad0))
+
 ## [0.1.3](https://github.com/glasskube/hello-distr/compare/0.1.2...0.1.3) (2025-02-25)
 
 
