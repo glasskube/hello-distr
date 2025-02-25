@@ -117,16 +117,18 @@ This script is hooked into the next.js build process as `prebuild`, see `fronten
 So far we have managed to build and release a new version of `hello-distr` and to publish the deploy artifacts to Distr Hub.
 Let's now take a look at these artifacts.
 
-You can find the production compose file at `deploy/docker-compose.yaml`. For all the services to start up and run correctly,
+You can find the production compose file at [`deploy/docker-compose.yaml`](deploy/docker-compose.yaml). For all the services to start up and run correctly,
 some environment variables need to be passed from the outside. You or your customer (depending on the deployment environment)
 will have to set these variables, when deploying the `hello-distr` application via the Distr web interface. 
 
-In order to make this process easier for you and your customers, you can define an optional environment template (see `deploy/env.template`)
-and upload it to Distr with the `template-file` parameter of the GitHub action. 
+In order to make this process easier for you and your customers, you can define an optional environment template 
+(see [`deploy/env.template`](deploy/env.template)) and upload it to Distr with the `template-file` parameter of the GitHub action. 
 
-This template is a simple text file with KEY=VALUE lines. Note: This template is only for the user to set the possible environment
+This template is a simple text file with `KEY=VALUE` lines. Note: This template is only for the user to set the possible environment
 values when deploying the app via Distr – and it will only be shown at the **first** deployment of this app. When later updating
 to a newer version, the deploy modal in the Distr web interface will show the previously set variables, not the template!
+
+You can use this template to set recommended values and to leave additional comments. 
 
 ## Local Development
 
