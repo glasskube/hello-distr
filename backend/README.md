@@ -1,7 +1,7 @@
 # hello-distr backend
 
 This is the Python backend server of `hello-distr`. 
-It connects to the postgres database and offers to JSON API endpoints
+It connects to the postgres database and offers two JSON API endpoints
 * `GET /latest-message`
 * `POST /message`
 

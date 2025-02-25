@@ -1,6 +1,7 @@
+# note: the compose project name will be overridden by the distr agent, to create a unique name
 name: hello-distr
 
-# tip: only share non-sensitive data to avoid accidental exposure of sensitive values (like passwords) to other containers
+# note: only share non-sensitive data to avoid accidental exposure of sensitive values (like passwords) to other containers
 x-shared-env: &shared-env
   HELLO_DISTR_HOST: ${HELLO_DISTR_HOST}
   HELLO_DISTR_DB_NAME: ${HELLO_DISTR_DB_NAME}

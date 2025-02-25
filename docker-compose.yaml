@@ -1,3 +1,5 @@
+# This is the dev docker compose. If you are looking for the deployed one, have a look at deploy/docker-compose.yaml
+
 name: hello-distr-dev
 
 services:
