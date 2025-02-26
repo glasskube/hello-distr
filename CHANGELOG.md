@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.5](https://github.com/glasskube/hello-distr/compare/0.1.4...0.1.5) (2025-02-26)
+
+
+### Other
+
+* add second push distr action, small docs updates ([#38](https://github.com/glasskube/hello-distr/issues/38)) ([70b2f0e](https://github.com/glasskube/hello-distr/commit/70b2f0e2bc111341960f714e030808043c4b1031))
+* update docs ([#36](https://github.com/glasskube/hello-distr/issues/36)) ([8130357](https://github.com/glasskube/hello-distr/commit/81303576be658c2182b0b7fd23a49525108ecf31))
+
 ## [0.1.4](https://github.com/glasskube/hello-distr/compare/0.1.3...0.1.4) (2025-02-25)
 
 
