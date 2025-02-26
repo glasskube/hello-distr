@@ -25,7 +25,7 @@ jobs:
         id: checkout
         uses: actions/checkout@v4
 
-      - name: Create Distr Version @ Christoph
+      - name: Create Distr Version
         id: distr-create-version
         uses: glasskube/distr-create-version-action@v1.2.1
         with:
