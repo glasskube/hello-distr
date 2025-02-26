@@ -36,7 +36,7 @@ The server will be available at [http://127.0.0.1:5000]().
 **Create a message**
 
 ```shell
-curl -X POST http://127.0.0.1:5000/messages -d '{"text": "hello distr asdf d"}'  -H 'Content-Type: application/json'
+curl -X POST http://127.0.0.1:5000/messages -d '{"text": "hello distr 1"}'  -H 'Content-Type: application/json'
 ```
 
 **Read the latest message**
