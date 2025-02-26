@@ -4,5 +4,5 @@ export function getApiUrl() {
   }
 
   // Local development fallback
-  return "http://localhost:6789";
+  return "http://localhost:5000";
 }

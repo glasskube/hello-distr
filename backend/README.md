@@ -7,9 +7,9 @@ It connects to the postgres database and offers two JSON API endpoints
 
 ## Local development
 
-To create virtual envrionment, run the following command in terminal:
+To create virtual environment, run the following command in terminal:
 
-```
+```shell
 python -m venv .venv
 ```
 
@@ -27,7 +27,7 @@ docker compose up -d
 
 To run the application locally
 
-```
+```shell
 flask --app app --env-file .env.development run
 ```
 
@@ -36,10 +36,10 @@ The server will be available at [http://127.0.0.1:5000]().
 **Create a message**
 
 ```shell
-curl -X POST http://127.0.0.1:5000/messages -d '{"text": "hello distr"}'  -H 'Content-Type: application/json'
+curl -X POST http://127.0.0.1:5000/messages -d '{"text": "hello distr asdf d"}'  -H 'Content-Type: application/json'
 ```
 
-**Read latest message**
+**Read the latest message**
 
 ```shell
 curl http://127.0.0.1:5000/latest-message

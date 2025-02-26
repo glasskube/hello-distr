@@ -9,6 +9,14 @@ on:
 
 jobs:
   push-action:
+    strategy:
+      matrix:
+        include:
+          - DISTR_TOKEN_SECRET: DISTR_TOKEN
+            DISTR_APPLICATION_ID_VAR:  DISTR_APPLICATION_ID
+          - DISTR_TOKEN_SECRET: DISTR_TOKEN_PMIG
+            DISTR_APPLICATION_ID_VAR:  DISTR_APPLICATION_ID_PMIG
+
     name: Push Released Docker Compose to Distr
     timeout-minutes: 5
     runs-on: ubuntu-latest
@@ -17,13 +25,13 @@ jobs:
         id: checkout
         uses: actions/checkout@v4
 
-      - name: Create Distr Version
+      - name: Create Distr Version @ Christoph
         id: distr-create-version
         uses: glasskube/distr-create-version-action@v1.2.1
         with:
-          api-token: ${{ secrets.DISTR_TOKEN }}
+          api-token: ${{ secrets[matrix.DISTR_TOKEN_SECRET] }}
           api-base: 'https://demo.distr.sh/api/v1'
-          application-id: ${{ vars.DISTR_APPLICATION_ID }}
+          application-id: ${{ vars[matrix.DISTR_APPLICATION_ID_VAR] }}
           version-name: ${{ github.ref_name }}
           compose-file: ${{ github.workspace }}/deploy/docker-compose.yaml
           template-file: ${{ github.workspace }}/deploy/env.template
