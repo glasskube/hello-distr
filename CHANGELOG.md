@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.1.6](https://github.com/glasskube/hello-distr/compare/0.1.5...0.1.6) (2025-02-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency framer-motion to v12 ([#45](https://github.com/glasskube/hello-distr/issues/45)) ([0c36c2b](https://github.com/glasskube/hello-distr/commit/0c36c2b5a7d8448d74121ba3d4a898f8ca65bbac))
+* extra hosts for frontend container ([#47](https://github.com/glasskube/hello-distr/issues/47)) ([04f6bb1](https://github.com/glasskube/hello-distr/commit/04f6bb198c6480836a45f360ef7f8247df378249))
+
+
+### Other
+
+* **deps:** replace dependency eslint-plugin-node with eslint-plugin-n ^14.0.0 ([#5](https://github.com/glasskube/hello-distr/issues/5)) ([6d9ffb3](https://github.com/glasskube/hello-distr/commit/6d9ffb328a9b889fffd37f06b2d7e5cbc890fca0))
+* **deps:** update dependency eslint-config-prettier to v10 ([#43](https://github.com/glasskube/hello-distr/issues/43)) ([d3204da](https://github.com/glasskube/hello-distr/commit/d3204da05b411809d1b6a00602860ff3a63d7cde))
+* **deps:** update dependency tailwind-variants to v0.3.1 ([#9](https://github.com/glasskube/hello-distr/issues/9)) ([6fd60cc](https://github.com/glasskube/hello-distr/commit/6fd60ccce739d648f73ab4fa874308b69d2ba118))
+* **deps:** update docker/setup-buildx-action action to v3.9.0 ([#32](https://github.com/glasskube/hello-distr/issues/32)) ([1e5a8ec](https://github.com/glasskube/hello-distr/commit/1e5a8ec8aec7c4f974bb38e1487fa855fe95cff6))
+
 ## [0.1.5](https://github.com/glasskube/hello-distr/compare/0.1.4...0.1.5) (2025-02-26)
 
 
