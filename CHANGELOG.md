@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.1.7](https://github.com/glasskube/hello-distr/compare/0.1.6...0.1.7) (2025-02-27)
+
+
+### Other
+
+* **deps:** update dependency @react-types/shared to v3.27.0 ([#13](https://github.com/glasskube/hello-distr/issues/13)) ([3acc53e](https://github.com/glasskube/hello-distr/commit/3acc53e10a3f723ce9304d5853af7c05408e68e9))
+* **deps:** update dependency autoprefixer to v10.4.20 ([#7](https://github.com/glasskube/hello-distr/issues/7)) ([e3dec4a](https://github.com/glasskube/hello-distr/commit/e3dec4a6824da52299d665993864397f0797f2ae))
+* **deps:** update dependency postcss to v8.5.3 ([#15](https://github.com/glasskube/hello-distr/issues/15)) ([827f6f0](https://github.com/glasskube/hello-distr/commit/827f6f0d7ffc92aac4266afe434405da4cee9a83))
+* **deps:** update dependency typescript to v5.7.3 ([#17](https://github.com/glasskube/hello-distr/issues/17)) ([a62c139](https://github.com/glasskube/hello-distr/commit/a62c1398f8a90fefa1a05f7fa32587aec4d6941b))
+* **deps:** update docker/build-push-action action to v6.15.0 ([#50](https://github.com/glasskube/hello-distr/issues/50)) ([68620fa](https://github.com/glasskube/hello-distr/commit/68620fae555be9f22440c93af5cac17ea686a0c6))
+* **deps:** update docker/metadata-action action to v5.7.0 ([#51](https://github.com/glasskube/hello-distr/issues/51)) ([2c84dd9](https://github.com/glasskube/hello-distr/commit/2c84dd9ecccb485b7b5588653b420e31a7dc7d13))
+* **deps:** update react monorepo ([#11](https://github.com/glasskube/hello-distr/issues/11)) ([d194191](https://github.com/glasskube/hello-distr/commit/d194191b2400137a20f29efef9987d783f1d77f4))
+
 ## [0.1.6](https://github.com/glasskube/hello-distr/compare/0.1.5...0.1.6) (2025-02-26)
 
 
