@@ -1,5 +1,49 @@
 # Changelog
 
+## [0.1.7](https://github.com/glasskube/hello-distr/compare/0.1.6...0.1.7) (2025-03-04)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @heroui/button to v2.2.15 ([#55](https://github.com/glasskube/hello-distr/issues/55)) ([6cbac86](https://github.com/glasskube/hello-distr/commit/6cbac86d4940759d53ed11a5626780f6ffbb334f))
+* **deps:** update dependency @heroui/code to v2.2.11 ([#56](https://github.com/glasskube/hello-distr/issues/56)) ([76d7183](https://github.com/glasskube/hello-distr/commit/76d7183e952345770e8a331bfd7ea9d86affd285))
+* **deps:** update dependency @heroui/input to v2.4.15 ([#57](https://github.com/glasskube/hello-distr/issues/57)) ([390a3c2](https://github.com/glasskube/hello-distr/commit/390a3c2b57a547c7e825f52aac5c69a79d4e80d0))
+* **deps:** update dependency @heroui/kbd to v2.2.11 ([#58](https://github.com/glasskube/hello-distr/issues/58)) ([a0353bb](https://github.com/glasskube/hello-distr/commit/a0353bb0e1495da0b0f49f85f3c03fd15ff8c21f))
+* **deps:** update dependency @heroui/link to v2.2.12 ([#59](https://github.com/glasskube/hello-distr/issues/59)) ([e76577c](https://github.com/glasskube/hello-distr/commit/e76577cb21e30df5174c34e550e7c113d0226f2a))
+* **deps:** update dependency @heroui/listbox to v2.3.14 ([#60](https://github.com/glasskube/hello-distr/issues/60)) ([3e161d7](https://github.com/glasskube/hello-distr/commit/3e161d7b56cf29fc1a3319adcbae4580844bcc39))
+* **deps:** update dependency @heroui/navbar to v2.2.13 ([#61](https://github.com/glasskube/hello-distr/issues/61)) ([f949c71](https://github.com/glasskube/hello-distr/commit/f949c711e497b4f7cea13c0e5ae1782a7dedc316))
+* **deps:** update dependency @heroui/snippet to v2.2.16 ([#62](https://github.com/glasskube/hello-distr/issues/62)) ([0bbc68d](https://github.com/glasskube/hello-distr/commit/0bbc68d145fd9c5c897a7db893cefede79604f3a))
+* **deps:** update dependency @heroui/switch to v2.2.13 ([#64](https://github.com/glasskube/hello-distr/issues/64)) ([9b97939](https://github.com/glasskube/hello-distr/commit/9b979391dc7f11b8104a6675f2fa2151e7fd95af))
+* **deps:** update dependency @heroui/system to v2.4.11 ([#65](https://github.com/glasskube/hello-distr/issues/65)) ([cd64328](https://github.com/glasskube/hello-distr/commit/cd643283f6b326e54e866bfb41e98cdfbc15ad16))
+* **deps:** update dependency @heroui/theme to v2.4.11 ([#67](https://github.com/glasskube/hello-distr/issues/67)) ([3c9dcd7](https://github.com/glasskube/hello-distr/commit/3c9dcd7c20473f4f8ea7edb77a5c7acb6f8e1540))
+* **deps:** update dependency framer-motion to v12.4.10 ([#70](https://github.com/glasskube/hello-distr/issues/70)) ([f2d817f](https://github.com/glasskube/hello-distr/commit/f2d817f4231b34f1adbf57c2bf1d59c7f10d05fa))
+* **deps:** update nextjs monorepo to v15.2.0 ([#40](https://github.com/glasskube/hello-distr/issues/40)) ([d56ea7a](https://github.com/glasskube/hello-distr/commit/d56ea7a6d9b782691e90d7de16e01c503d852c50))
+* **deps:** update nextjs monorepo to v15.2.1 ([#73](https://github.com/glasskube/hello-distr/issues/73)) ([b4f3745](https://github.com/glasskube/hello-distr/commit/b4f37454e1641685cbddf20dd38bbe3c9b894f5f))
+* **deps:** update react monorepo (major) ([#46](https://github.com/glasskube/hello-distr/issues/46)) ([74f3d0e](https://github.com/glasskube/hello-distr/commit/74f3d0e9d740f888a68ca38f5e81db08b5f58049))
+
+
+### Other
+
+* **deps:** update dependency @react-types/shared to v3.27.0 ([#13](https://github.com/glasskube/hello-distr/issues/13)) ([3acc53e](https://github.com/glasskube/hello-distr/commit/3acc53e10a3f723ce9304d5853af7c05408e68e9))
+* **deps:** update dependency @types/node to v20.17.21 ([#63](https://github.com/glasskube/hello-distr/issues/63)) ([8ff5989](https://github.com/glasskube/hello-distr/commit/8ff5989d6d6be075275492b716fcdf0247771ecd))
+* **deps:** update dependency @types/node to v20.17.22 ([#66](https://github.com/glasskube/hello-distr/issues/66)) ([7594aca](https://github.com/glasskube/hello-distr/commit/7594aca07cb16206e359f0b88bd2dd7c85a111d5))
+* **deps:** update dependency @types/node to v22 ([#41](https://github.com/glasskube/hello-distr/issues/41)) ([2c654f9](https://github.com/glasskube/hello-distr/commit/2c654f9fbb230957d9617b537f6f3549508647a1))
+* **deps:** update dependency @types/node to v22.13.9 ([#72](https://github.com/glasskube/hello-distr/issues/72)) ([403c01b](https://github.com/glasskube/hello-distr/commit/403c01bd50ee712b86f5ed1e31938a014b975455))
+* **deps:** update dependency autoprefixer to v10.4.20 ([#7](https://github.com/glasskube/hello-distr/issues/7)) ([e3dec4a](https://github.com/glasskube/hello-distr/commit/e3dec4a6824da52299d665993864397f0797f2ae))
+* **deps:** update dependency eslint to v9 ([#42](https://github.com/glasskube/hello-distr/issues/42)) ([0b9086b](https://github.com/glasskube/hello-distr/commit/0b9086b864905f5edf45bfb44f234794ab4bac08))
+* **deps:** update dependency eslint-plugin-n to v17 ([#53](https://github.com/glasskube/hello-distr/issues/53)) ([5c5e25c](https://github.com/glasskube/hello-distr/commit/5c5e25c2c351e5bb71dcf3b1d431bb621d26159d))
+* **deps:** update dependency postcss to v8.5.3 ([#15](https://github.com/glasskube/hello-distr/issues/15)) ([827f6f0](https://github.com/glasskube/hello-distr/commit/827f6f0d7ffc92aac4266afe434405da4cee9a83))
+* **deps:** update dependency prettier to v3.5.3 ([#69](https://github.com/glasskube/hello-distr/issues/69)) ([c6ad5e1](https://github.com/glasskube/hello-distr/commit/c6ad5e1e5e47d45cb0819bd5ecd0609455824cba))
+* **deps:** update dependency typescript to v5.7.3 ([#17](https://github.com/glasskube/hello-distr/issues/17)) ([a62c139](https://github.com/glasskube/hello-distr/commit/a62c1398f8a90fefa1a05f7fa32587aec4d6941b))
+* **deps:** update dependency typescript to v5.8.2 ([#68](https://github.com/glasskube/hello-distr/issues/68)) ([40b1c83](https://github.com/glasskube/hello-distr/commit/40b1c83d0f1df60d155258593a68bb8c1af0d8ad))
+* **deps:** update docker/build-push-action action to v6.15.0 ([#50](https://github.com/glasskube/hello-distr/issues/50)) ([68620fa](https://github.com/glasskube/hello-distr/commit/68620fae555be9f22440c93af5cac17ea686a0c6))
+* **deps:** update docker/metadata-action action to v5.7.0 ([#51](https://github.com/glasskube/hello-distr/issues/51)) ([2c84dd9](https://github.com/glasskube/hello-distr/commit/2c84dd9ecccb485b7b5588653b420e31a7dc7d13))
+* **deps:** update docker/setup-buildx-action action to v3.10.0 ([#52](https://github.com/glasskube/hello-distr/issues/52)) ([cdd684c](https://github.com/glasskube/hello-distr/commit/cdd684cd203943f0f3f7a9ad045d5378e5fc9388))
+* **deps:** update googleapis/release-please-action action to v4.1.4 ([#54](https://github.com/glasskube/hello-distr/issues/54)) ([92ef7c4](https://github.com/glasskube/hello-distr/commit/92ef7c42933a6cb0e17a88674226a7ebfb2054d5))
+* **deps:** update react monorepo ([#11](https://github.com/glasskube/hello-distr/issues/11)) ([d194191](https://github.com/glasskube/hello-distr/commit/d194191b2400137a20f29efef9987d783f1d77f4))
+* **deps:** update typescript-eslint monorepo to v8.25.0 ([#21](https://github.com/glasskube/hello-distr/issues/21)) ([986dfde](https://github.com/glasskube/hello-distr/commit/986dfde5bf7b40e74dc556b4906a27c29fda6402))
+* **deps:** update typescript-eslint monorepo to v8.26.0 ([#71](https://github.com/glasskube/hello-distr/issues/71)) ([243de4c](https://github.com/glasskube/hello-distr/commit/243de4c795fea35126b15b4c2b3e0fc85d7b3a45))
+
 ## [0.1.6](https://github.com/glasskube/hello-distr/compare/0.1.5...0.1.6) (2025-02-26)
 
 
