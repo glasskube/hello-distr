@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.8](https://github.com/glasskube/hello-distr/compare/0.1.7...0.1.8) (2025-03-06)
+
+
+### Other
+
+* **deps:** update dependency eslint-plugin-n to v17.16.2 ([#74](https://github.com/glasskube/hello-distr/issues/74)) ([fc188e5](https://github.com/glasskube/hello-distr/commit/fc188e5e40d326d6c659b2e4b53c312204a09119))
+* **deps:** update googleapis/release-please-action action to v4.1.5 ([#76](https://github.com/glasskube/hello-distr/issues/76)) ([692bc0f](https://github.com/glasskube/hello-distr/commit/692bc0fd75e12e28623285d5ec227ebfb8fa789c))
+
 ## [0.1.7](https://github.com/glasskube/hello-distr/compare/0.1.6...0.1.7) (2025-03-04)
 
 
