@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.1.9](https://github.com/glasskube/hello-distr/compare/0.1.8...0.1.9) (2025-03-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @heroui/button to v2.2.16 ([#83](https://github.com/glasskube/hello-distr/issues/83)) ([04cc1f4](https://github.com/glasskube/hello-distr/commit/04cc1f4352481235c7d27895f33937f56ed512eb))
+* **deps:** update react-spectrum monorepo ([#77](https://github.com/glasskube/hello-distr/issues/77)) ([0afdbce](https://github.com/glasskube/hello-distr/commit/0afdbcee11fd50b7a7417f0812813cb0d84779e8))
+
+
+### Other
+
+* **deps:** update dependency @types/node to v22.13.10 ([#82](https://github.com/glasskube/hello-distr/issues/82)) ([31cae12](https://github.com/glasskube/hello-distr/commit/31cae125c55642713e96b6ff2ea46c0ee92e938b))
+* **deps:** update dependency eslint to v9.22.0 ([#80](https://github.com/glasskube/hello-distr/issues/80)) ([eceb238](https://github.com/glasskube/hello-distr/commit/eceb23876aaf3dfbb8a0a0b7ba3638af71d8f0cc))
+* **deps:** update dependency eslint-config-prettier to v10.1.1 ([#79](https://github.com/glasskube/hello-distr/issues/79)) ([baaae94](https://github.com/glasskube/hello-distr/commit/baaae9440e96d56bf5e07ac5f0a8822d20138e62))
+* **deps:** update googleapis/release-please-action action to v4.2.0 ([#81](https://github.com/glasskube/hello-distr/issues/81)) ([464a475](https://github.com/glasskube/hello-distr/commit/464a475cb8edb5b014f7c6f6a8d3b2dca23321fe))
+
 ## [0.1.8](https://github.com/glasskube/hello-distr/compare/0.1.7...0.1.8) (2025-03-06)
 
 
