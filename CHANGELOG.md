@@ -1,5 +1,31 @@
 # Changelog
 
+## [0.1.9](https://github.com/glasskube/hello-distr/compare/0.1.8...0.1.9) (2025-03-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @heroui/button to v2.2.16 ([#83](https://github.com/glasskube/hello-distr/issues/83)) ([04cc1f4](https://github.com/glasskube/hello-distr/commit/04cc1f4352481235c7d27895f33937f56ed512eb))
+* **deps:** update dependency @heroui/code to v2.2.12 ([#84](https://github.com/glasskube/hello-distr/issues/84)) ([9a54727](https://github.com/glasskube/hello-distr/commit/9a54727d2aa3c6038f0102c93efa6d84d6ff1b8c))
+* **deps:** update dependency @heroui/input to v2.4.16 ([#85](https://github.com/glasskube/hello-distr/issues/85)) ([2d00276](https://github.com/glasskube/hello-distr/commit/2d002768f142c1009e6a49e0d556ef95cfc041bb))
+* **deps:** update dependency @heroui/kbd to v2.2.12 ([#86](https://github.com/glasskube/hello-distr/issues/86)) ([895ca17](https://github.com/glasskube/hello-distr/commit/895ca177caac049ea1d9285ab207f2ce87e662a1))
+* **deps:** update dependency @heroui/link to v2.2.13 ([#87](https://github.com/glasskube/hello-distr/issues/87)) ([7f3bb25](https://github.com/glasskube/hello-distr/commit/7f3bb256d4e069a49e715089dc0a49a1c2862068))
+* **deps:** update dependency @heroui/listbox to v2.3.15 ([#88](https://github.com/glasskube/hello-distr/issues/88)) ([45eb8f6](https://github.com/glasskube/hello-distr/commit/45eb8f688a6e02c5a684db41de0c2c25771dc562))
+* **deps:** update dependency @heroui/navbar to v2.2.14 ([#89](https://github.com/glasskube/hello-distr/issues/89)) ([dfba164](https://github.com/glasskube/hello-distr/commit/dfba16463cb0513804de8962052f52ba44584388))
+* **deps:** update dependency @heroui/snippet to v2.2.17 ([#90](https://github.com/glasskube/hello-distr/issues/90)) ([0516690](https://github.com/glasskube/hello-distr/commit/0516690b7eabb6dc41634bf5e6fac9d1f789e358))
+* **deps:** update dependency @heroui/switch to v2.2.14 ([#91](https://github.com/glasskube/hello-distr/issues/91)) ([25525fa](https://github.com/glasskube/hello-distr/commit/25525faef2a346884da5ff1bcfcbc9727b8969c7))
+* **deps:** update dependency @heroui/system to v2.4.12 ([#92](https://github.com/glasskube/hello-distr/issues/92)) ([a299044](https://github.com/glasskube/hello-distr/commit/a299044a2f6ae8a857c0f995620de4f3ed02b5ee))
+* **deps:** update react-spectrum monorepo ([#77](https://github.com/glasskube/hello-distr/issues/77)) ([0afdbce](https://github.com/glasskube/hello-distr/commit/0afdbcee11fd50b7a7417f0812813cb0d84779e8))
+
+
+### Other
+
+* **deps:** update dependency @types/node to v22.13.10 ([#82](https://github.com/glasskube/hello-distr/issues/82)) ([31cae12](https://github.com/glasskube/hello-distr/commit/31cae125c55642713e96b6ff2ea46c0ee92e938b))
+* **deps:** update dependency autoprefixer to v10.4.21 ([#93](https://github.com/glasskube/hello-distr/issues/93)) ([648882a](https://github.com/glasskube/hello-distr/commit/648882a1c8db82fc7ea73e03cd65296bbb239fe6))
+* **deps:** update dependency eslint to v9.22.0 ([#80](https://github.com/glasskube/hello-distr/issues/80)) ([eceb238](https://github.com/glasskube/hello-distr/commit/eceb23876aaf3dfbb8a0a0b7ba3638af71d8f0cc))
+* **deps:** update dependency eslint-config-prettier to v10.1.1 ([#79](https://github.com/glasskube/hello-distr/issues/79)) ([baaae94](https://github.com/glasskube/hello-distr/commit/baaae9440e96d56bf5e07ac5f0a8822d20138e62))
+* **deps:** update googleapis/release-please-action action to v4.2.0 ([#81](https://github.com/glasskube/hello-distr/issues/81)) ([464a475](https://github.com/glasskube/hello-distr/commit/464a475cb8edb5b014f7c6f6a8d3b2dca23321fe))
+
 ## [0.1.8](https://github.com/glasskube/hello-distr/compare/0.1.7...0.1.8) (2025-03-06)
 
 
