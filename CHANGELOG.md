@@ -1,5 +1,25 @@
 # Changelog
 
+## [0.1.10](https://github.com/glasskube/hello-distr/compare/0.1.9...0.1.10) (2025-03-14)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @heroui/theme to v2.4.12 ([#94](https://github.com/glasskube/hello-distr/issues/94)) ([cb8cb78](https://github.com/glasskube/hello-distr/commit/cb8cb783b715658dfb8fec1c236085ba43a2c116))
+* **deps:** update dependency @react-aria/visually-hidden to v3.8.21 ([#100](https://github.com/glasskube/hello-distr/issues/100)) ([034f101](https://github.com/glasskube/hello-distr/commit/034f101265d4cb0372be1b72c2baa453c7bd2abc))
+* **deps:** update dependency framer-motion to v12.4.11 ([#97](https://github.com/glasskube/hello-distr/issues/97)) ([d40dc7f](https://github.com/glasskube/hello-distr/commit/d40dc7f6d9d4d12fb2cf8e1ae72b1ccbf6faed50))
+* **deps:** update dependency framer-motion to v12.5.0 ([#102](https://github.com/glasskube/hello-distr/issues/102)) ([60ba856](https://github.com/glasskube/hello-distr/commit/60ba856107fba18b1a8810a6b65e7c1460c2fb01))
+* **deps:** update dependency next-themes to v0.4.5 ([#96](https://github.com/glasskube/hello-distr/issues/96)) ([fd97715](https://github.com/glasskube/hello-distr/commit/fd97715fbf513d05cd933e6a36f81bc5633737cc))
+* **deps:** update dependency next-themes to v0.4.6 ([#103](https://github.com/glasskube/hello-distr/issues/103)) ([76ce99e](https://github.com/glasskube/hello-distr/commit/76ce99ea400757d7153f324653d2b944a9cca89e))
+* **deps:** update nextjs monorepo to v15.2.2 ([#101](https://github.com/glasskube/hello-distr/issues/101)) ([a2056c3](https://github.com/glasskube/hello-distr/commit/a2056c3325334099301ee4110fcb07562566ee4d))
+
+
+### Other
+
+* **deps:** update dependency tailwind-variants to v1 ([#95](https://github.com/glasskube/hello-distr/issues/95)) ([6d33595](https://github.com/glasskube/hello-distr/commit/6d3359534e110d58f22e40afd42e8652be1c6c73))
+* **deps:** update docker/login-action action to v3.4.0 ([#105](https://github.com/glasskube/hello-distr/issues/105)) ([9b3696d](https://github.com/glasskube/hello-distr/commit/9b3696df11263f2b1298cb2237e36a4c13333eee))
+* **deps:** update typescript-eslint monorepo to v8.26.1 ([#98](https://github.com/glasskube/hello-distr/issues/98)) ([8376166](https://github.com/glasskube/hello-distr/commit/83761663c8a757f9c0bd9674c4161b14a354084d))
+
 ## [0.1.9](https://github.com/glasskube/hello-distr/compare/0.1.8...0.1.9) (2025-03-10)
 
 
