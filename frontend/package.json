@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@heroui/button": "2.2.19",
-    "@heroui/code": "2.2.12",
+    "@heroui/code": "2.2.14",
     "@heroui/input": "2.4.17",
     "@heroui/kbd": "2.2.13",
     "@heroui/link": "2.2.14",
