@@ -23,7 +23,7 @@
     "@heroui/system": "2.4.17",
     "@heroui/theme": "2.4.17",
     "@react-aria/ssr": "3.9.9",
-    "@react-aria/visually-hidden": "3.8.24",
+    "@react-aria/visually-hidden": "3.8.25",
     "clsx": "2.1.1",
     "framer-motion": "12.16.0",
     "intl-messageformat": "^10.5.0",
