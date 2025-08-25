@@ -23,7 +23,7 @@
     "@heroui/system": "2.4.20",
     "@heroui/theme": "2.4.17",
     "@react-aria/ssr": "3.9.10",
-    "@react-aria/visually-hidden": "3.8.26",
+    "@react-aria/visually-hidden": "3.8.27",
     "clsx": "2.1.1",
     "framer-motion": "12.23.12",
     "intl-messageformat": "^10.5.0",
@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "15.5.0",
-    "@react-types/shared": "3.31.0",
+    "@react-types/shared": "3.32.0",
     "@types/node": "22.18.0",
     "@types/react": "19.1.11",
     "@types/react-dom": "19.1.7",
