@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.12](https://github.com/glasskube/hello-distr/compare/0.1.11...0.1.12) (2025-11-20)
+
+
+### Other
+
+* **deps:** update actions/checkout action to v6 ([#497](https://github.com/glasskube/hello-distr/issues/497)) ([fbdcf40](https://github.com/glasskube/hello-distr/commit/fbdcf40a94b8a6bca69341ba72077709e8e86053))
+* **deps:** update typescript-eslint monorepo to v8.47.0 ([#495](https://github.com/glasskube/hello-distr/issues/495)) ([07a3042](https://github.com/glasskube/hello-distr/commit/07a3042ad334b0cfb798d54b679c0cfc9bf5ee6f))
+
 ## [0.1.11](https://github.com/glasskube/hello-distr/compare/0.1.10...0.1.11) (2025-11-18)
 
 
