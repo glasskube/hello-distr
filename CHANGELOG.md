@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.1.12](https://github.com/glasskube/hello-distr/compare/0.1.11...0.1.12) (2025-11-29)
+
+
+### Other
+
+* **deps:** update actions/checkout action to v6 ([#497](https://github.com/glasskube/hello-distr/issues/497)) ([fbdcf40](https://github.com/glasskube/hello-distr/commit/fbdcf40a94b8a6bca69341ba72077709e8e86053))
+* **deps:** update dependency @types/react to v19.2.7 ([#499](https://github.com/glasskube/hello-distr/issues/499)) ([4e6f858](https://github.com/glasskube/hello-distr/commit/4e6f8582e41527aaff210ab460e9cf9cbd779fed))
+* **deps:** update dependency prettier to v3.7.1 ([#501](https://github.com/glasskube/hello-distr/issues/501)) ([5524d2e](https://github.com/glasskube/hello-distr/commit/5524d2eacd57f493dd162e564080a6bfede78056))
+* **deps:** update dependency prettier to v3.7.2 ([#503](https://github.com/glasskube/hello-distr/issues/503)) ([dfae61a](https://github.com/glasskube/hello-distr/commit/dfae61a6b80254afc14f0e3a6b23df6a1725f861))
+* **deps:** update dependency prettier to v3.7.3 ([#504](https://github.com/glasskube/hello-distr/issues/504)) ([61a2d4f](https://github.com/glasskube/hello-distr/commit/61a2d4f2e2c329e63ac2eede659a2fa8b1c1d774))
+* **deps:** update dependency tailwind-variants to v3.2.2 ([#498](https://github.com/glasskube/hello-distr/issues/498)) ([867319e](https://github.com/glasskube/hello-distr/commit/867319e0f03ee736bd6831f8e2257575e747b2f8))
+* **deps:** update docker/metadata-action action to v5.10.0 ([#502](https://github.com/glasskube/hello-distr/issues/502)) ([089266e](https://github.com/glasskube/hello-distr/commit/089266e415f2f3ce4124cf71d2a0d7f4beeecd45))
+* **deps:** update typescript-eslint monorepo to v8.47.0 ([#495](https://github.com/glasskube/hello-distr/issues/495)) ([07a3042](https://github.com/glasskube/hello-distr/commit/07a3042ad334b0cfb798d54b679c0cfc9bf5ee6f))
+* **deps:** update typescript-eslint monorepo to v8.48.0 ([#500](https://github.com/glasskube/hello-distr/issues/500)) ([fcdb867](https://github.com/glasskube/hello-distr/commit/fcdb8670810bb5c18f4c1b2a348da61d2c688194))
+
 ## [0.1.11](https://github.com/glasskube/hello-distr/compare/0.1.10...0.1.11) (2025-11-18)
 
 
