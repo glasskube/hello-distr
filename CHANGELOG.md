@@ -1,5 +1,31 @@
 # Changelog
 
+## [0.1.12](https://github.com/glasskube/hello-distr/compare/0.1.11...0.1.12) (2025-12-04)
+
+
+### Bug Fixes
+
+* **deps:** update dependency framer-motion to v12.23.25 ([#505](https://github.com/glasskube/hello-distr/issues/505)) ([9720556](https://github.com/glasskube/hello-distr/commit/9720556484ed73662f5b1e8be66fd05aeae4ff7c))
+* **deps:** update dependency next to v15.5.7 [security] ([#512](https://github.com/glasskube/hello-distr/issues/512)) ([3f8b0f5](https://github.com/glasskube/hello-distr/commit/3f8b0f54ffdaaad26dc99f58d14ca71917c1311e))
+* **deps:** update react monorepo to v19.2.1 ([#510](https://github.com/glasskube/hello-distr/issues/510)) ([73d28b5](https://github.com/glasskube/hello-distr/commit/73d28b5d0c5d4be927b8dd109c7eaf3fabdb4749))
+
+
+### Other
+
+* **deps:** update actions/checkout action to v6 ([#497](https://github.com/glasskube/hello-distr/issues/497)) ([fbdcf40](https://github.com/glasskube/hello-distr/commit/fbdcf40a94b8a6bca69341ba72077709e8e86053))
+* **deps:** update actions/checkout action to v6.0.1 ([#507](https://github.com/glasskube/hello-distr/issues/507)) ([801117b](https://github.com/glasskube/hello-distr/commit/801117b9e1e86e22545ac80732abf326bf1e4682))
+* **deps:** update dependency @types/react to v19.2.7 ([#499](https://github.com/glasskube/hello-distr/issues/499)) ([4e6f858](https://github.com/glasskube/hello-distr/commit/4e6f8582e41527aaff210ab460e9cf9cbd779fed))
+* **deps:** update dependency prettier to v3.7.1 ([#501](https://github.com/glasskube/hello-distr/issues/501)) ([5524d2e](https://github.com/glasskube/hello-distr/commit/5524d2eacd57f493dd162e564080a6bfede78056))
+* **deps:** update dependency prettier to v3.7.2 ([#503](https://github.com/glasskube/hello-distr/issues/503)) ([dfae61a](https://github.com/glasskube/hello-distr/commit/dfae61a6b80254afc14f0e3a6b23df6a1725f861))
+* **deps:** update dependency prettier to v3.7.3 ([#504](https://github.com/glasskube/hello-distr/issues/504)) ([61a2d4f](https://github.com/glasskube/hello-distr/commit/61a2d4f2e2c329e63ac2eede659a2fa8b1c1d774))
+* **deps:** update dependency prettier to v3.7.4 ([#508](https://github.com/glasskube/hello-distr/issues/508)) ([f0a3a9a](https://github.com/glasskube/hello-distr/commit/f0a3a9adbde8602fca22642631c2d5d8fca22c98))
+* **deps:** update dependency tailwind-variants to v3.2.2 ([#498](https://github.com/glasskube/hello-distr/issues/498)) ([867319e](https://github.com/glasskube/hello-distr/commit/867319e0f03ee736bd6831f8e2257575e747b2f8))
+* **deps:** update docker/metadata-action action to v5.10.0 ([#502](https://github.com/glasskube/hello-distr/issues/502)) ([089266e](https://github.com/glasskube/hello-distr/commit/089266e415f2f3ce4124cf71d2a0d7f4beeecd45))
+* **deps:** update nextjs monorepo to v15.5.7 ([#509](https://github.com/glasskube/hello-distr/issues/509)) ([56438e6](https://github.com/glasskube/hello-distr/commit/56438e60243f7552b8d1ea13d136a68f7fa9901e))
+* **deps:** update typescript-eslint monorepo to v8.47.0 ([#495](https://github.com/glasskube/hello-distr/issues/495)) ([07a3042](https://github.com/glasskube/hello-distr/commit/07a3042ad334b0cfb798d54b679c0cfc9bf5ee6f))
+* **deps:** update typescript-eslint monorepo to v8.48.0 ([#500](https://github.com/glasskube/hello-distr/issues/500)) ([fcdb867](https://github.com/glasskube/hello-distr/commit/fcdb8670810bb5c18f4c1b2a348da61d2c688194))
+* **deps:** update typescript-eslint monorepo to v8.48.1 ([#506](https://github.com/glasskube/hello-distr/issues/506)) ([6ab09be](https://github.com/glasskube/hello-distr/commit/6ab09be17a324f107b0085db7b26150eacad967d))
+
 ## [0.1.11](https://github.com/glasskube/hello-distr/compare/0.1.10...0.1.11) (2025-11-18)
 
 
