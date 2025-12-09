@@ -35,7 +35,7 @@
   "devDependencies": {
     "@next/eslint-plugin-next": "15.5.7",
     "@react-types/shared": "3.32.1",
-    "@types/node": "22.19.1",
+    "@types/node": "22.19.2",
     "@types/react": "19.2.7",
     "@types/react-dom": "19.2.3",
     "@typescript-eslint/eslint-plugin": "8.48.1",
