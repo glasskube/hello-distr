@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.2.1](https://github.com/glasskube/hello-distr/compare/0.2.0...0.2.1) (2026-01-13)
+
+
+### Bug Fixes
+
+* status dashboard ([#533](https://github.com/glasskube/hello-distr/issues/533)) ([260dcf7](https://github.com/glasskube/hello-distr/commit/260dcf75c5dba03e8f4bd6a0a0894795805168d3))
+
+
+### Other
+
+* **deps:** update dependency @types/node to v25.0.8 ([#530](https://github.com/glasskube/hello-distr/issues/530)) ([a62d183](https://github.com/glasskube/hello-distr/commit/a62d183c2cfc5a524d44734fe7ca12f5308268e8))
+* **deps:** update to latest distr-action ([3354acc](https://github.com/glasskube/hello-distr/commit/3354acc036d0cb7aca2777f59fc5fff609291275))
+
 ## [0.2.0](https://github.com/glasskube/hello-distr/compare/0.1.12...0.2.0) (2026-01-13)
 
 
