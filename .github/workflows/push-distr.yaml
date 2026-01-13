@@ -27,7 +27,7 @@ jobs:
 
       - name: Create Distr Version
         id: distr-create-version
-        uses: glasskube/distr-create-version-action@v1.3.1
+        uses: glasskube/distr-create-version-action@v1.4.0
         with:
           api-token: ${{ secrets[matrix.DISTR_TOKEN_SECRET] }}
           api-base: "https://demo.distr.sh/api/v1"
@@ -35,6 +35,7 @@ jobs:
           version-name: ${{ github.ref_name }}
           compose-file: ${{ github.workspace }}/deploy/docker-compose.yaml
           template-file: ${{ github.workspace }}/deploy/env.template
+          link-template: "http://{{ .Env.HELLO_DISTR_HOST }}"
           update-deployments: true
 
       - name: Print Application Version ID
