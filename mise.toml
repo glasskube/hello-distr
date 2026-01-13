@@ -1,6 +1,6 @@
 [tools]
 node = "24"
-python = "3.12"
+python = "3.14.2"
 
 [env]
 _.file = ['backend/.env.development']
