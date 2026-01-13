@@ -1,5 +1,27 @@
 # Changelog
 
+## [0.2.0](https://github.com/glasskube/hello-distr/compare/0.1.12...0.2.0) (2026-01-13)
+
+
+### Features
+
+* add service health overview ([#526](https://github.com/glasskube/hello-distr/issues/526)) ([5589644](https://github.com/glasskube/hello-distr/commit/558964483aee4457e2c2877b83a023ae5697e28e))
+
+
+### Bug Fixes
+
+* **deps:** update dependency framer-motion to v12.26.2 ([#528](https://github.com/glasskube/hello-distr/issues/528)) ([a8e1ee4](https://github.com/glasskube/hello-distr/commit/a8e1ee4432dc294a45e4417e5350b21f517530ad))
+
+
+### Other
+
+* **deps-dev:** bump brace-expansion from 1.1.11 to 1.1.12 in /frontend ([#266](https://github.com/glasskube/hello-distr/issues/266)) ([68b33d9](https://github.com/glasskube/hello-distr/commit/68b33d9967098be4a46fb0c31bfe72453b3d7503))
+* **deps:** update caddy docker tag to v2.10.2 ([#388](https://github.com/glasskube/hello-distr/issues/388)) ([c254d2a](https://github.com/glasskube/hello-distr/commit/c254d2ab7fdbe1b5e7fdc6bf2ca4a3eb2cc46c85))
+* **deps:** update dependency python ([#460](https://github.com/glasskube/hello-distr/issues/460)) ([ee1cb04](https://github.com/glasskube/hello-distr/commit/ee1cb04da0277315962474e998e9c82a16d0ba05))
+* **deps:** update docker/setup-buildx-action action to v3.12.0 ([#529](https://github.com/glasskube/hello-distr/issues/529)) ([bd11359](https://github.com/glasskube/hello-distr/commit/bd11359e27122ccb65ba94199f879c8104ade3bf))
+* **deps:** update node.js to v24 ([#478](https://github.com/glasskube/hello-distr/issues/478)) ([8629468](https://github.com/glasskube/hello-distr/commit/86294684c991e595658d8b01949859da598677b8))
+* **deps:** update postgres docker tag to v17.5 ([#200](https://github.com/glasskube/hello-distr/issues/200)) ([2599c15](https://github.com/glasskube/hello-distr/commit/2599c15b4e841dbebac423c78c80a8a9cfd2b054))
+
 ## [0.1.12](https://github.com/glasskube/hello-distr/compare/0.1.11...0.1.12) (2025-12-14)
 
 
