@@ -26,6 +26,10 @@ FROM base AS builder
 ARG VERSION
 ENV VERSION=${VERSION}
 
+# API URL must be set at build time for Next.js NEXT_PUBLIC_ variables
+ARG NEXT_PUBLIC_API_URL=/api
+ENV NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL}
+
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
