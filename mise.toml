@@ -1,0 +1,73 @@
+[tools]
+node = "24"
+python = "3.12"
+
+[env]
+_.file = ['backend/.env.development']
+
+[tasks."deps:frontend"]
+run = 'cd frontend && npm install'
+sources = ["frontend/package.json", "frontend/package-lock.json"]
+description = 'Install frontend dependencies'
+
+[tasks."deps:backend"]
+run = 'cd backend && python -m venv .venv && .venv/bin/pip install -r requirements.txt'
+sources = ["backend/requirements.txt"]
+description = 'Install backend dependencies and create virtual environment'
+
+[tasks.deps]
+description = 'Install all dependencies'
+depends = ["deps:frontend", "deps:backend"]
+
+[tasks."dev:frontend"]
+run = 'cd frontend && npm run dev'
+description = 'Start frontend dev server (port 3000)'
+depends = ["deps:frontend"]
+
+[tasks."dev:backend"]
+run = 'cd backend && .venv/bin/flask --app app --env-file .env.development run'
+description = 'Start backend dev server (port 5000)'
+depends = ["deps:backend"]
+
+[tasks."build:frontend"]
+run = 'cd frontend && npm run build'
+description = 'Build frontend for production'
+depends = ["deps:frontend"]
+
+[tasks."start:frontend"]
+run = 'cd frontend && npm run start'
+description = 'Start frontend production server'
+depends = ["build:frontend"]
+
+[tasks.lint]
+run = 'cd frontend && npm run lint'
+description = 'Run frontend linter'
+depends = ["deps:frontend"]
+
+[tasks.dev]
+alias = "serve"
+description = 'Start backend and frontend for development'
+run = '''
+#!/usr/bin/env bash
+set -e
+
+echo "Starting backend on port 5000..."
+cd backend && .venv/bin/flask --app app --env-file .env.development run &
+BACKEND_PID=$!
+
+echo "Starting frontend on port 3000..."
+cd frontend && npm run dev &
+FRONTEND_PID=$!
+
+echo ""
+echo "Services started:"
+echo "  Frontend: http://localhost:3000"
+echo "  Backend:  http://localhost:5000"
+echo ""
+echo "Press Ctrl+C to stop all services"
+
+trap "kill $BACKEND_PID $FRONTEND_PID" EXIT
+
+wait
+'''
+depends = ["deps"]

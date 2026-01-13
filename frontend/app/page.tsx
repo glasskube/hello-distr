@@ -7,12 +7,24 @@ import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 import { getApiUrl } from "@/config/api";
+import { StatusSection } from "@/components/status-section";
 
 export default async function Home() {
-  const response = await fetch(`${getApiUrl()}/latest-message`, {
-    cache: "no-store",
-  });
-  const output = await response.text();
+  let output = "Backend unavailable";
+
+  try {
+    const response = await fetch(`${getApiUrl()}/latest-message`, {
+      cache: "no-store",
+    });
+
+    if (response.ok) {
+      output = await response.text();
+    } else {
+      output = "Error fetching message";
+    }
+  } catch {
+    output = "Backend unavailable";
+  }
 
   return (
     <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
@@ -53,6 +65,8 @@ export default async function Home() {
           </span>
         </Snippet>
       </div>
+
+      <StatusSection />
     </section>
   );
 }

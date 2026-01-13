@@ -5,7 +5,7 @@ name: Push Distr Application Version
 on:
   push:
     tags:
-      - '*'
+      - "*"
 
 jobs:
   push-action:
@@ -13,9 +13,9 @@ jobs:
       matrix:
         include:
           - DISTR_TOKEN_SECRET: DISTR_TOKEN
-            DISTR_APPLICATION_ID_VAR:  DISTR_APPLICATION_ID
+            DISTR_APPLICATION_ID_VAR: DISTR_APPLICATION_ID
           - DISTR_TOKEN_SECRET: DISTR_TOKEN_PMIG
-            DISTR_APPLICATION_ID_VAR:  DISTR_APPLICATION_ID_PMIG
+            DISTR_APPLICATION_ID_VAR: DISTR_APPLICATION_ID_PMIG
 
     name: Push Released Docker Compose to Distr
     timeout-minutes: 5
@@ -27,14 +27,15 @@ jobs:
 
       - name: Create Distr Version
         id: distr-create-version
-        uses: glasskube/distr-create-version-action@v1.2.1
+        uses: glasskube/distr-create-version-action@v1.3.1
         with:
           api-token: ${{ secrets[matrix.DISTR_TOKEN_SECRET] }}
-          api-base: 'https://demo.distr.sh/api/v1'
+          api-base: "https://demo.distr.sh/api/v1"
           application-id: ${{ vars[matrix.DISTR_APPLICATION_ID_VAR] }}
           version-name: ${{ github.ref_name }}
           compose-file: ${{ github.workspace }}/deploy/docker-compose.yaml
           template-file: ${{ github.workspace }}/deploy/env.template
+          update-deployments: true
 
       - name: Print Application Version ID
         id: output
