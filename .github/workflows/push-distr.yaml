@@ -27,7 +27,7 @@ jobs:
 
       - name: Create Distr Version
         id: distr-create-version
-        uses: glasskube/distr-create-version-action@v1.4.0
+        uses: glasskube/distr-create-version-action@v1.4.1
         with:
           api-token: ${{ secrets[matrix.DISTR_TOKEN_SECRET] }}
           api-base: "https://demo.distr.sh/api/v1"
