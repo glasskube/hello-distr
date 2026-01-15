@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.2.2](https://github.com/distr-sh/hello-distr/compare/0.2.1...0.2.2) (2026-01-15)
+
+
+### Bug Fixes
+
+* **deps:** update nextjs monorepo to v16.1.2 ([#536](https://github.com/distr-sh/hello-distr/issues/536)) ([ac0f158](https://github.com/distr-sh/hello-distr/commit/ac0f158d71069d58e339bd205e604be69bd2163a))
+
+
+### Other
+
+* **deps:** update dependency eslint-plugin-n to v17.23.2 ([#531](https://github.com/distr-sh/hello-distr/issues/531)) ([21ff93e](https://github.com/distr-sh/hello-distr/commit/21ff93e997cec5aad0dfc7af58f172678ee628a3))
+* **deps:** update dependency eslint-plugin-prettier to v5.5.5 ([#535](https://github.com/distr-sh/hello-distr/issues/535)) ([0a5e995](https://github.com/distr-sh/hello-distr/commit/0a5e995e588a613cfd3b879eb63e3dc86af81e66))
+* **deps:** update dependency prettier to v3.8.0 ([#537](https://github.com/distr-sh/hello-distr/issues/537)) ([ef21dc0](https://github.com/distr-sh/hello-distr/commit/ef21dc02db9268f2e790cbee578bbc444db43c5d))
+* move organization ([#538](https://github.com/distr-sh/hello-distr/issues/538)) ([d0da6c8](https://github.com/distr-sh/hello-distr/commit/d0da6c8f3df547d478e761fb0e286ca0bb2f52f8))
+
 ## [0.2.1](https://github.com/distr-sh/hello-distr/compare/0.2.0...0.2.1) (2026-01-13)
 
 
