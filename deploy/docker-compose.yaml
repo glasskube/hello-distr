@@ -8,7 +8,7 @@ x-shared-env: &shared-env
 
 services:
   postgres:
-    image: 'postgres:17.5-alpine3.20'
+    image: "postgres:17.5-alpine3.20"
     environment:
       <<: *shared-env
       POSTGRES_USER: ${HELLO_DISTR_DB_USER:?error}
@@ -21,12 +21,12 @@ services:
       interval: 5s
       retries: 6
     volumes:
-      - 'postgres:/var/lib/postgresql/data/'
+      - "postgres:/var/lib/postgresql/data/"
     networks:
       - app_network
 
   backend:
-    image: ghcr.io/glasskube/hello-distr/backend:0.2.1 # x-release-please-version
+    image: ghcr.io/distr-sh/hello-distr/backend:0.2.1 # x-release-please-version
     environment:
       <<: *shared-env
       DB_URL: postgresql://${HELLO_DISTR_DB_USER:?error}:${HELLO_DISTR_DB_PASSWORD:?error}@postgres/${HELLO_DISTR_DB_NAME:?error}?sslmode=disable
@@ -38,10 +38,10 @@ services:
       - app_network
 
   frontend:
-    image: ghcr.io/glasskube/hello-distr/frontend:0.2.1 # x-release-please-version
+    image: ghcr.io/distr-sh/hello-distr/frontend:0.2.1 # x-release-please-version
     environment:
       <<: *shared-env
-      NEXT_PUBLIC_API_URL: 'http://${HELLO_DISTR_HOST:?error}/api'
+      NEXT_PUBLIC_API_URL: "http://${HELLO_DISTR_HOST:?error}/api"
     depends_on:
       - backend
     restart: unless-stopped
@@ -51,12 +51,12 @@ services:
       - app_network
 
   proxy:
-    image: ghcr.io/glasskube/hello-distr/proxy:0.2.1 # x-release-please-version
+    image: ghcr.io/distr-sh/hello-distr/proxy:0.2.1 # x-release-please-version
     environment:
       <<: *shared-env
       HOST: ${HELLO_DISTR_HOST:?error}
     ports:
-      - '80:80'
+      - "80:80"
     depends_on:
       - backend
       - frontend

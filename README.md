@@ -13,7 +13,7 @@ We make use of:
 * GitHub Actions/Workflows
 * GitHub Registry (`ghcr.io`)
 * [Release Please](https://github.com/googleapis/release-please-action)
-* [`distr-create-version-action`](https://github.com/glasskube/distr-create-version-action)
+* [`distr-create-version-action`](https://github.com/distr-sh/distr-create-version-action)
 
 ## Repository Structure
 
@@ -22,7 +22,7 @@ there are the following deployment specific files/directories:
 
 * `.github/workflows/*.yaml`: These specify the GitHub action workflows.
 * `deploy/`: Contains the [production docker compose file](deploy/docker-compose.yaml) and an [environment template](deploy/env.template). 
-These will be uploaded to distr using the [`distr-create-version-action`](https://github.com/glasskube/distr-create-version-action), 
+These will be uploaded to distr using the [`distr-create-version-action`](https://github.com/distr-sh/distr-create-version-action), 
 as defined in the [push-distr workflow](.github/workflows/push-distr.yaml).
 * `release-please-config.json`: Contains the config for the release please action.
 
@@ -73,7 +73,7 @@ Once created, copy the ID of the application from the web interface (click on th
 * Add the copied application ID as a variable to your GitHub repository and call it `DISTR_APPLICATION_ID`. Alternatively you can also 
 directly paste it into the `push-distr.yaml` workflow file (but please never directly paste any tokens/secrets!). 
 
-See [distr-create-version-action docs](https://github.com/glasskube/distr-create-version-action/blob/main/README.md#usage) for further information regarding
+See [distr-create-version-action docs](https://github.com/distr-sh/distr-create-version-action/blob/main/README.md#usage) for further information regarding
 this GitHub action. 
 
 Note that in this example repo, we set the `api-base` to `https://demo.distr.sh/api/v1`. In order to make use of this in production, 
@@ -153,4 +153,4 @@ You can install Postgres locally or use Docker to run it in a container.
 docker compose up
 ```
 
-To start the backend or frontend, please consult the respective `README`s in the subdirectories. 
+To start the backend or frontend, please consult the respective `README`s in the subdirectories.
