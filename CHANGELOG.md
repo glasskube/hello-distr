@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.2.3](https://github.com/distr-sh/hello-distr/compare/0.2.2...0.2.3) (2026-01-17)
+
+
+### Bug Fixes
+
+* **deps:** update nextjs monorepo to v16.1.3 ([#543](https://github.com/distr-sh/hello-distr/issues/543)) ([b528212](https://github.com/distr-sh/hello-distr/commit/b52821295e8054a234abffe6d933feefe836c41a))
+
+
+### Other
+
+* **deps:** update dependency @types/node to v25.0.9 ([#540](https://github.com/distr-sh/hello-distr/issues/540)) ([dcaf2a7](https://github.com/distr-sh/hello-distr/commit/dcaf2a77a53f7b02665a34b250cc53ed7000de85))
+* **deps:** update dependency intl-messageformat to v11.1.0 ([#541](https://github.com/distr-sh/hello-distr/issues/541)) ([26de3cf](https://github.com/distr-sh/hello-distr/commit/26de3cf1fe7da2fa9e6678d9fa17648414004c10))
+
 ## [0.2.2](https://github.com/distr-sh/hello-distr/compare/0.2.1...0.2.2) (2026-01-15)
 
 
