@@ -17,6 +17,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: pg_isready -h localhost -U ${HELLO_DISTR_DB_USER:?error} -d ${HELLO_DISTR_DB_NAME:?error}
+      interval: 5s
     volumes:
       - "postgres:/var/lib/postgresql/data/"
     networks:
@@ -37,8 +38,9 @@ services:
           "CMD",
           "python",
           "-c",
-          "import urllib.request; urllib.request.urlopen('http://localhost:5000/health')",
+          "import urllib.request; urllib.request.urlopen('http://localhost:5000/health', timeout=1)",
         ]
+      interval: 5s
     networks:
       - app_network
 
@@ -52,15 +54,8 @@ services:
         condition: service_healthy
     restart: unless-stopped
     healthcheck:
-      test:
-        [
-          "CMD",
-          "wget",
-          "--no-verbose",
-          "--tries=1",
-          "--spider",
-          "http://127.0.0.1:3000",
-        ]
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1:3000"]
+      interval: 5s
     extra_hosts:
       - "${HELLO_DISTR_HOST:?error}=host-gateway"
     networks:
@@ -80,15 +75,8 @@ services:
         condition: service_healthy
     restart: unless-stopped
     healthcheck:
-      test:
-        [
-          "CMD",
-          "wget",
-          "--no-verbose",
-          "--tries=1",
-          "--spider",
-          "http://127.0.0.1:80",
-        ]
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1:80"]
+      interval: 5s
     networks:
       - app_network
 
