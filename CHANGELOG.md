@@ -1,5 +1,34 @@
 # Changelog
 
+## [0.2.3](https://github.com/distr-sh/hello-distr/compare/0.2.2...0.2.3) (2026-01-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency framer-motion to v12.27.0 ([#544](https://github.com/distr-sh/hello-distr/issues/544)) ([b9670a6](https://github.com/distr-sh/hello-distr/commit/b9670a6d9415e3aa4b95bc8e06bcbd945d13c612))
+* **deps:** update dependency framer-motion to v12.27.1 ([#547](https://github.com/distr-sh/hello-distr/issues/547)) ([ebad1c6](https://github.com/distr-sh/hello-distr/commit/ebad1c6b7a2ce2e9c1bea1e9f22ddc3efe3ea3cf))
+* **deps:** update dependency framer-motion to v12.27.2 ([#549](https://github.com/distr-sh/hello-distr/issues/549)) ([6f7d122](https://github.com/distr-sh/hello-distr/commit/6f7d122e2ea0484ccff939d663aeab9c817e9abd))
+* **deps:** update dependency framer-motion to v12.27.5 ([#551](https://github.com/distr-sh/hello-distr/issues/551)) ([c76d204](https://github.com/distr-sh/hello-distr/commit/c76d204acc3b1ccc768f104b618403a69f3caed8))
+* **deps:** update dependency framer-motion to v12.28.1 ([#553](https://github.com/distr-sh/hello-distr/issues/553)) ([73517b4](https://github.com/distr-sh/hello-distr/commit/73517b49c1944d80d53fe8465708fbe4b493015c))
+* **deps:** update dependency framer-motion to v12.29.0 ([#556](https://github.com/distr-sh/hello-distr/issues/556)) ([c2cca33](https://github.com/distr-sh/hello-distr/commit/c2cca33e90066d428ff549af8dbaaee23b789f55))
+* **deps:** update dependency framer-motion to v12.29.2 ([#558](https://github.com/distr-sh/hello-distr/issues/558)) ([47b1b08](https://github.com/distr-sh/hello-distr/commit/47b1b08fe8b3c9c758b33619056ae16e07d2d926))
+* **deps:** update nextjs monorepo to v16.1.3 ([#543](https://github.com/distr-sh/hello-distr/issues/543)) ([b528212](https://github.com/distr-sh/hello-distr/commit/b52821295e8054a234abffe6d933feefe836c41a))
+* **deps:** update nextjs monorepo to v16.1.4 ([#548](https://github.com/distr-sh/hello-distr/issues/548)) ([e3d0848](https://github.com/distr-sh/hello-distr/commit/e3d0848ea64577be4b00c5414fac1900067f1724))
+
+
+### Other
+
+* add health checks ([#559](https://github.com/distr-sh/hello-distr/issues/559)) ([fb2f27c](https://github.com/distr-sh/hello-distr/commit/fb2f27ca6582783e5a5a8b5dc37bbbfad8434d2f))
+* **deps:** update actions/checkout action to v6.0.2 ([#555](https://github.com/distr-sh/hello-distr/issues/555)) ([4092b1b](https://github.com/distr-sh/hello-distr/commit/4092b1bac7c815e1dfcceb3d0eeb1549fe359a2a))
+* **deps:** update dependency @playwright/test to v1.58.0 ([#557](https://github.com/distr-sh/hello-distr/issues/557)) ([3f4ef12](https://github.com/distr-sh/hello-distr/commit/3f4ef128da2cc2b69d9a93bc4f7ff54d23912608))
+* **deps:** update dependency @types/node to v25.0.10 ([#554](https://github.com/distr-sh/hello-distr/issues/554)) ([d317a6e](https://github.com/distr-sh/hello-distr/commit/d317a6e8724a5bc5c35c4bb4c76118e2820ab255))
+* **deps:** update dependency @types/node to v25.0.9 ([#540](https://github.com/distr-sh/hello-distr/issues/540)) ([dcaf2a7](https://github.com/distr-sh/hello-distr/commit/dcaf2a77a53f7b02665a34b250cc53ed7000de85))
+* **deps:** update dependency @types/react to v19.2.9 ([#550](https://github.com/distr-sh/hello-distr/issues/550)) ([b5652d4](https://github.com/distr-sh/hello-distr/commit/b5652d48ef7bebb151e10b5da84a3c8084954427))
+* **deps:** update dependency intl-messageformat to v11.1.0 ([#541](https://github.com/distr-sh/hello-distr/issues/541)) ([26de3cf](https://github.com/distr-sh/hello-distr/commit/26de3cf1fe7da2fa9e6678d9fa17648414004c10))
+* **deps:** update dependency intl-messageformat to v11.1.1 ([#545](https://github.com/distr-sh/hello-distr/issues/545)) ([79f4d5b](https://github.com/distr-sh/hello-distr/commit/79f4d5b34e305e84803c32810151303c8d47a361))
+* **deps:** update dependency prettier to v3.8.1 ([#552](https://github.com/distr-sh/hello-distr/issues/552)) ([fc37f24](https://github.com/distr-sh/hello-distr/commit/fc37f24fa20b82b081a992060d793eb1fe653f79))
+* **deps:** update typescript-eslint monorepo to v8.53.1 ([#546](https://github.com/distr-sh/hello-distr/issues/546)) ([552ca5c](https://github.com/distr-sh/hello-distr/commit/552ca5c89cdc109d27ed1ff6df89ad962984efa1))
+
 ## [0.2.2](https://github.com/distr-sh/hello-distr/compare/0.2.1...0.2.2) (2026-01-15)
 
 
